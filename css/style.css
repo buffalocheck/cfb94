@@ -1,0 +1,80 @@
+body{
+	height: 100%;
+	margin: 0;
+	font-size: 1em;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+.pimg1, .pimg2, .pimg3{
+	position: relative;
+	opacity: 0.75;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+/* fixed = parallax * scroll = normal*/
+	background-attachment: fixed;
+}
+
+.pimg1{
+	background-image: url('../img/tcu-texas01.jpg');
+	min-height: 35em;
+}
+.pimg2{
+	background-image: url('../img/ucla-usc01.jpg');
+	min-height: 20em;
+}
+.pimg3{
+	background-image: url('../img/uw-asu01.jpg');
+	min-height: 20em;
+}
+
+.section {
+	text-align: center;
+	padding: 1em 1.5em;
+}
+
+.section-light{
+	background-color: #f4f4f4;
+	color: #666
+}
+
+.section-dark{
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.ptext {
+	position: absolute;
+	top:50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 2.5em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 3em;
+}
+
+.ptext .border {
+	background-color: #111;
+	color: #fff;
+	padding: 1em;
+}
+
+.ptext .border.trans{
+	background-color: transparent;
+}
+
+@media(max-width: 568px){
+	.pimg1, .pimg2, .pimg3 {
+		background-attachment: scroll;
+	}
+	.ptext {
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+}
