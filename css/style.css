@@ -20,7 +20,7 @@ body{
 
 .pimg1{
 	background-image: url('../img/tcu-texas01.jpg');
-	min-height: 35em;
+	min-height: 100vh;
 }
 .pimg2{
 	background-image: url('../img/ucla-usc01.jpg');
